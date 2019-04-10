@@ -1,0 +1,114 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+  
+  
+  
+  <style>
+      body{
+          text-align: center;
+         
+      }
+  
+.item:nth-child(1){
+    height: 50%;
+width: 50%;
+    margin: 2px;
+    border: 2px solid black;
+    grid-area: area1;
+     /* background-color: steelblue; */
+     /* margin:5px; */
+     /* text-align: center; */
+     }
+    .item:nth-child(2){
+        margin: 2px;
+        border: 2px solid black;
+     grid-area: area2;
+     /* background-color: orange; */
+     /* margin:5px; */
+     /* text-align: center; */
+    }
+    .item:nth-child(3){
+        margin: 2px;
+        border: 2px solid black;
+     grid-area: area3;
+     /* background-color: green; */
+     /* margin:5px; */
+     /* text-align: center; */
+    }
+    .item:nth-child(4){
+        margin: 2px;
+        border: 2px solid black;
+     grid-area: area4;
+     /* background-color: gold */
+     /* margin:5px; */
+     /* text-align: center; */
+    }
+    .item:nth-child(5){
+        border: 2px solid black;
+        margin: 2px;
+       
+     grid-area: area5;
+     /* background-color: violet; */
+     /* margin:5px; */
+     /* text-align: center; */
+    }
+    .item:nth-child(6){
+        margin: 2px;
+        border: 2px solid black;
+     grid-area: area6;
+     /* background-color: rgb(130, 141, 238); */
+     /* margin:5px; */
+     /* text-align: center; */
+    }
+    .item:nth-child(7){
+        margin: 2px;
+        border: 2px solid black;
+     grid-area: area7;
+     /* background-color: rgb(130, 207, 238); */
+     /* margin:5px; */
+     /* text-align: center; */
+    }
+    
+    
+    #parent{
+        border: 2px solid black;
+        margin: 10px;
+
+        height: 100%;
+        width: 100%;
+        display:grid;
+        grid-template-columns: 3;
+        grid-template-rows: 4;
+        grid-template: "area1 area2 area2"
+                       "area1 area3 area3"
+                       "area4 area4 area4"
+                       "area5 area6 area7";
+                      
+                       /* "area5 area5 area5" */
+    }
+  
+ 
+    
+      
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <logo class="item">Logo</logo>
+        <social class="item">social Media links</social>
+        <primary class="item">primary navigation</primary>
+        <hero class="item">hero iamges<br>images slide show/video/BIG image and text</hero>
+        <teaser1 class="item">1st teaser<br>more info to cheaper content</teaser1>
+        <teaser2 class="item">2nd teaser<br>more info to cheaper content</teaser2>
+        <teaser3 class="item">3rd teaser<br>more info to cheaper content</teaser3>
+    <div>
+            <footer class="item">Footer</footer>
+            <div>socila Media</div>
+        </div>
+    </div>
+</body>
+</html>
